@@ -1,0 +1,103 @@
+/* REQUIRED BUTTON STYLES: */ 
+
+a.btn {
+  text-decoration: none;
+}
+
+a.btn, button.btn, input[type='submit'] { 
+  display: inline-block;
+	width: auto;
+  position: relative;
+  border: 0; 
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  overflow: visible; /* removes extra side padding in IE */
+  font: 1em/1em Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+a.btn:focus, 
+button.btn:focus, 
+input[type='submit']:focus { 
+	outline: none;	
+}
+
+button.btn::-moz-focus-inner {
+  padding: 0;
+  border: none;  /* overrides extra padding in Firefox */
+}
+
+a.span,
+button.btn span { 
+  position: relative;
+  display: block; 
+  white-space: nowrap;  
+}
+
+/* OPTIONAL BUTTON STYLES for applying custom style: */   
+input[type='submit'],
+a.btn,
+button.btn,
+a.btn span,
+button.btn span { 
+  height: 48px;
+  line-height: 48px;
+  text-align: center; 
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url("../img/btn.gif");  
+}
+
+a.btn,
+button.btn { 
+  padding-right: 21px; /* should be 5px smaller than bg-image to avoid a gap when resizing fonts */
+  text-align: center; 
+  background-position: 100% -100px; 
+}
+
+a.btn span,
+button.btn span {
+  display: block;
+  padding-left: 21px;  
+  background-position: 0 0; 
+  color: #FFF; 
+}
+
+a.btn:focus,
+button.btn:focus,  
+a.btn:hover,
+button.btn:hover { 
+  background-position: 100% -150px; 
+}
+
+a.btn:focus span,
+button.btn:focus span,  
+a.btn:hover span,
+button.btn:hover span {
+  background-position: 0 -50px;
+}
+
+/* Submit inputs cannot use sliding doors. The can either use a tiling backgrund image or a single image with a fixed width: */   
+input[type='submit'] { 
+	width: 202px;
+  padding: 0 20px; 
+  color: #FFF;
+  text-align: center; 
+  background-position: 0 -100px; 
+}
+
+input[type='submit']:focus,
+input[type='submit']:hover { 
+  background-position: 0 -150px; 
+}
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  /* Safari and Google Chrome only - fix margins */
+  button.btn span {
+    margin-top: -1px;
+  }
+}
