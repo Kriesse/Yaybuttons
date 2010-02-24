@@ -80,7 +80,7 @@ button.btn:hover span {
   background-position: 0 -50px;
 }
 
-/* Submit inputs cannot use sliding doors. The can either use a tiling background image or a single image with a fixed width: */   
+/* Submit inputs cannot use sliding doors. The can either use a tiling background image or a single image with a fixed width: */
 input.btn { 
   width: 202px;
   padding: 0 20px; 
