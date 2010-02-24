@@ -1,12 +1,11 @@
-/* REQUIRED BUTTON STYLES: */ 
-
+/* REQUIRED STYLES: */ 
 a.btn {
   text-decoration: none;
 }
 
-a.btn, button.btn, input[type='submit'] { 
+a.btn, button.btn, input.btn { 
   display: inline-block;
-	width: auto;
+  width: auto;
   position: relative;
   border: 0; 
   padding: 0;
@@ -20,8 +19,8 @@ a.btn, button.btn, input[type='submit'] {
 
 a.btn:focus, 
 button.btn:focus, 
-input[type='submit']:focus { 
-	outline: none;	
+input.btn:focus { 
+  outline: none;  
 }
 
 button.btn::-moz-focus-inner {
@@ -32,12 +31,12 @@ button.btn::-moz-focus-inner {
 a.span,
 button.btn span { 
   position: relative;
-  display: block; 
+  display: inline-block; 
   white-space: nowrap;  
 }
 
 /* OPTIONAL BUTTON STYLES for applying custom style: */   
-input[type='submit'],
+input.btn,
 a.btn,
 button.btn,
 a.btn span,
@@ -80,20 +79,18 @@ button.btn:hover span {
 }
 
 /* Submit inputs cannot use sliding doors. The can either use a tiling backgrund image or a single image with a fixed width: */   
-input[type='submit'] { 
-	width: 202px;
+input.btn { 
+  width: 202px;
   padding: 0 20px; 
   color: #FFF;
   text-align: center; 
   background-position: 0 -100px; 
 }
 
-input[type='submit']:focus,
-input[type='submit']:hover { 
+input.btn:focus,
+input.btn:hover { 
   background-position: 0 -150px; 
 }
-
-
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   /* Safari and Google Chrome only - fix margins */
