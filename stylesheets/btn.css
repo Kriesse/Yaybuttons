@@ -58,7 +58,7 @@ button.btn {
 
 a.btn span,
 button.btn span {
-  display: block;
+  display: inline-block;
   padding-left: 21px;  
   background-position: 0 0; 
   color: #FFF; 
