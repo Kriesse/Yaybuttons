@@ -17,6 +17,8 @@ a.btn, button.btn, input.btn {
   vertical-align: bottom;
 }
 
+a.btn span:focus, 
+button.btn span:focus, 
 a.btn:focus, 
 button.btn:focus, 
 input.btn:focus { 
@@ -28,7 +30,7 @@ button.btn::-moz-focus-inner {
   border: none;  /* overrides extra padding in Firefox */
 }
 
-a.span,
+a.btn.span,
 button.btn span { 
   position: relative;
   display: inline-block; 
